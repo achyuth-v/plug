@@ -1,0 +1,73 @@
+// Mock curators — replaced by Firebase auth + Supabase profiles in production
+
+export const MOCK_CURATORS = [
+  {
+    id: 'c1',
+    handle: 'jay.k',
+    initials: 'JK',
+    tier: 4,
+    xp: 4200,
+    bio: 'minimalist setups + chairs that don\'t suck',
+    followers: 240,
+    drops_count: 12,
+    color: 'lime',
+  },
+  {
+    id: 'c2',
+    handle: 'mira',
+    initials: 'MR',
+    tier: 5,
+    xp: 6800,
+    bio: 'home stuff. cozy energy only.',
+    followers: 512,
+    drops_count: 18,
+    color: 'coral',
+  },
+  {
+    id: 'c3',
+    handle: 'tev',
+    initials: 'TV',
+    tier: 3,
+    xp: 1900,
+    bio: 'tech finds. cheap & loud.',
+    followers: 88,
+    drops_count: 6,
+    color: 'blue',
+  },
+  {
+    id: 'c4',
+    handle: 'noor',
+    initials: 'NO',
+    tier: 4,
+    xp: 3600,
+    bio: 'fitness + outdoor things i actually use.',
+    followers: 310,
+    drops_count: 9,
+    color: 'mint',
+  },
+  {
+    id: 'c5',
+    handle: 'rae',
+    initials: 'RA',
+    tier: 5,
+    xp: 7200,
+    bio: 'fashion. y2k forever.',
+    followers: 920,
+    drops_count: 24,
+    color: 'orange',
+  },
+  {
+    id: 'sv',
+    handle: 'you',
+    initials: 'SV',
+    tier: 3,
+    xp: 640,
+    bio: 'just started — let\'s see how this goes.',
+    followers: 12,
+    drops_count: 2,
+    color: 'sun',
+  },
+];
+
+export const getCurator = (id) => MOCK_CURATORS.find(c => c.id === id);
+export const CURRENT_USER = MOCK_CURATORS.find(c => c.id === 'sv');
